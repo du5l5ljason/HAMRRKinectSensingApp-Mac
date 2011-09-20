@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		718BCE6E1429219800ED54D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718BCE6D1429219800ED54D6 /* Cocoa.framework */; };
+		718BCE781429219800ED54D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE761429219800ED54D6 /* InfoPlist.strings */; };
+		718BCE7A1429219800ED54D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 718BCE791429219800ED54D6 /* main.m */; };
+		718BCE7E1429219800ED54D6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE7C1429219800ED54D6 /* Credits.rtf */; };
+		718BCE811429219800ED54D6 /* kinect_sensingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 718BCE801429219800ED54D6 /* kinect_sensingAppDelegate.m */; };
+		718BCE841429219800ED54D6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE821429219800ED54D6 /* MainMenu.xib */; };
+		718BCE8C1429219800ED54D6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718BCE8B1429219800ED54D6 /* SenTestingKit.framework */; };
+		718BCE8D1429219800ED54D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718BCE6D1429219800ED54D6 /* Cocoa.framework */; };
+		718BCE951429219800ED54D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE931429219800ED54D6 /* InfoPlist.strings */; };
+		718BCE971429219800ED54D6 /* kinect_sensingTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE961429219800ED54D6 /* kinect_sensingTests.h */; };
+		718BCE991429219800ED54D6 /* kinect_sensingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 718BCE981429219800ED54D6 /* kinect_sensingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		718BCE8E1429219800ED54D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718BCE601429219800ED54D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718BCE681429219800ED54D6;
+			remoteInfo = kinect_sensing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		718BCE691429219800ED54D6 /* kinect_sensing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kinect_sensing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718BCE6D1429219800ED54D6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		718BCE701429219800ED54D6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		718BCE711429219800ED54D6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		718BCE721429219800ED54D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		718BCE751429219800ED54D6 /* kinect_sensing-Info.plist */ = {isa = PBXFileReference; path = "kinect_sensing-Info.plist"; sourceTree = "<group>"; };
+		718BCE771429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		718BCE791429219800ED54D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		718BCE7B1429219800ED54D6 /* kinect_sensing-Prefix.pch */ = {isa = PBXFileReference; path = "kinect_sensing-Prefix.pch"; sourceTree = "<group>"; };
+		718BCE7D1429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		718BCE7F1429219800ED54D6 /* kinect_sensingAppDelegate.h */ = {isa = PBXFileReference; path = kinect_sensingAppDelegate.h; sourceTree = "<group>"; };
+		718BCE801429219800ED54D6 /* kinect_sensingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kinect_sensingAppDelegate.m; sourceTree = "<group>"; };
+		718BCE831429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		718BCE8A1429219800ED54D6 /* kinect_sensingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kinect_sensingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718BCE8B1429219800ED54D6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		718BCE921429219800ED54D6 /* kinect_sensingTests-Info.plist */ = {isa = PBXFileReference; path = "kinect_sensingTests-Info.plist"; sourceTree = "<group>"; };
+		718BCE941429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		718BCE961429219800ED54D6 /* kinect_sensingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kinect_sensingTests.h; sourceTree = "<group>"; };
+		718BCE981429219800ED54D6 /* kinect_sensingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kinect_sensingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		718BCE661429219800ED54D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BCE6E1429219800ED54D6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BCE861429219800ED54D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BCE8C1429219800ED54D6 /* SenTestingKit.framework in Frameworks */,
+				718BCE8D1429219800ED54D6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		718BCE5E1429219800ED54D6 = {
+			isa = PBXGroup;
+			children = (
+				718BCE731429219800ED54D6 /* kinect_sensing */,
+				718BCE901429219800ED54D6 /* kinect_sensingTests */,
+				718BCE6C1429219800ED54D6 /* Frameworks */,
+				718BCE6A1429219800ED54D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		718BCE6A1429219800ED54D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				718BCE691429219800ED54D6 /* kinect_sensing.app */,
+				718BCE8A1429219800ED54D6 /* kinect_sensingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		718BCE6C1429219800ED54D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				718BCE6D1429219800ED54D6 /* Cocoa.framework */,
+				718BCE8B1429219800ED54D6 /* SenTestingKit.framework */,
+				718BCE6F1429219800ED54D6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		718BCE6F1429219800ED54D6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				718BCE701429219800ED54D6 /* AppKit.framework */,
+				718BCE711429219800ED54D6 /* CoreData.framework */,
+				718BCE721429219800ED54D6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		718BCE731429219800ED54D6 /* kinect_sensing */ = {
+			isa = PBXGroup;
+			children = (
+				718BCE7F1429219800ED54D6 /* kinect_sensingAppDelegate.h */,
+				718BCE801429219800ED54D6 /* kinect_sensingAppDelegate.m */,
+				718BCE821429219800ED54D6 /* MainMenu.xib */,
+				718BCE741429219800ED54D6 /* Supporting Files */,
+			);
+			path = kinect_sensing;
+			sourceTree = "<group>";
+		};
+		718BCE741429219800ED54D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				718BCE751429219800ED54D6 /* kinect_sensing-Info.plist */,
+				718BCE761429219800ED54D6 /* InfoPlist.strings */,
+				718BCE791429219800ED54D6 /* main.m */,
+				718BCE7B1429219800ED54D6 /* kinect_sensing-Prefix.pch */,
+				718BCE7C1429219800ED54D6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		718BCE901429219800ED54D6 /* kinect_sensingTests */ = {
+			isa = PBXGroup;
+			children = (
+				718BCE961429219800ED54D6 /* kinect_sensingTests.h */,
+				718BCE981429219800ED54D6 /* kinect_sensingTests.m */,
+				718BCE911429219800ED54D6 /* Supporting Files */,
+			);
+			path = kinect_sensingTests;
+			sourceTree = "<group>";
+		};
+		718BCE911429219800ED54D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				718BCE921429219800ED54D6 /* kinect_sensingTests-Info.plist */,
+				718BCE931429219800ED54D6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		718BCE681429219800ED54D6 /* kinect_sensing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718BCE9C1429219800ED54D6 /* Build configuration list for PBXNativeTarget "kinect_sensing" */;
+			buildPhases = (
+				718BCE651429219800ED54D6 /* Sources */,
+				718BCE661429219800ED54D6 /* Frameworks */,
+				718BCE671429219800ED54D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kinect_sensing;
+			productName = kinect_sensing;
+			productReference = 718BCE691429219800ED54D6 /* kinect_sensing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		718BCE891429219800ED54D6 /* kinect_sensingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718BCE9F1429219800ED54D6 /* Build configuration list for PBXNativeTarget "kinect_sensingTests" */;
+			buildPhases = (
+				718BCE851429219800ED54D6 /* Sources */,
+				718BCE861429219800ED54D6 /* Frameworks */,
+				718BCE871429219800ED54D6 /* Resources */,
+				718BCE881429219800ED54D6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718BCE8F1429219800ED54D6 /* PBXTargetDependency */,
+			);
+			name = kinect_sensingTests;
+			productName = kinect_sensingTests;
+			productReference = 718BCE8A1429219800ED54D6 /* kinect_sensingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		718BCE601429219800ED54D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Arizona State University";
+			};
+			buildConfigurationList = 718BCE631429219800ED54D6 /* Build configuration list for PBXProject "kinect_sensing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 718BCE5E1429219800ED54D6;
+			productRefGroup = 718BCE6A1429219800ED54D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				718BCE681429219800ED54D6 /* kinect_sensing */,
+				718BCE891429219800ED54D6 /* kinect_sensingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		718BCE671429219800ED54D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BCE781429219800ED54D6 /* InfoPlist.strings in Resources */,
+				718BCE7E1429219800ED54D6 /* Credits.rtf in Resources */,
+				718BCE841429219800ED54D6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BCE871429219800ED54D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BCE951429219800ED54D6 /* InfoPlist.strings in Resources */,
+				718BCE971429219800ED54D6 /* kinect_sensingTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		718BCE881429219800ED54D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		718BCE651429219800ED54D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BCE7A1429219800ED54D6 /* main.m in Sources */,
+				718BCE811429219800ED54D6 /* kinect_sensingAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BCE851429219800ED54D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BCE991429219800ED54D6 /* kinect_sensingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		718BCE8F1429219800ED54D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718BCE681429219800ED54D6 /* kinect_sensing */;
+			targetProxy = 718BCE8E1429219800ED54D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		718BCE761429219800ED54D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718BCE771429219800ED54D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		718BCE7C1429219800ED54D6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718BCE7D1429219800ED54D6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		718BCE821429219800ED54D6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718BCE831429219800ED54D6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		718BCE931429219800ED54D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718BCE941429219800ED54D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		718BCE9A1429219800ED54D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		718BCE9B1429219800ED54D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		718BCE9D1429219800ED54D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				INFOPLIST_FILE = "kinect_sensing/kinect_sensing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		718BCE9E1429219800ED54D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				INFOPLIST_FILE = "kinect_sensing/kinect_sensing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		718BCEA01429219800ED54D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/kinect_sensing.app/Contents/MacOS/kinect_sensing";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				INFOPLIST_FILE = "kinect_sensingTests/kinect_sensingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		718BCEA11429219800ED54D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/kinect_sensing.app/Contents/MacOS/kinect_sensing";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				INFOPLIST_FILE = "kinect_sensingTests/kinect_sensingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		718BCE631429219800ED54D6 /* Build configuration list for PBXProject "kinect_sensing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718BCE9A1429219800ED54D6 /* Debug */,
+				718BCE9B1429219800ED54D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718BCE9C1429219800ED54D6 /* Build configuration list for PBXNativeTarget "kinect_sensing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718BCE9D1429219800ED54D6 /* Debug */,
+				718BCE9E1429219800ED54D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		718BCE9F1429219800ED54D6 /* Build configuration list for PBXNativeTarget "kinect_sensingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718BCEA01429219800ED54D6 /* Debug */,
+				718BCEA11429219800ED54D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 718BCE601429219800ED54D6 /* Project object */;
+}
