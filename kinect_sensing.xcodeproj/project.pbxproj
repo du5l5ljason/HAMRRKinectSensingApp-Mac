@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0650F95314C7710000B13B26 /* libOpenNI.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650F95214C7710000B13B26 /* libOpenNI.dylib */; };
+		0650F95414C7710000B13B26 /* libOpenNI.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650F95214C7710000B13B26 /* libOpenNI.dylib */; };
 		718BCE6E1429219800ED54D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718BCE6D1429219800ED54D6 /* Cocoa.framework */; };
 		718BCE781429219800ED54D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE761429219800ED54D6 /* InfoPlist.strings */; };
 		718BCE7A1429219800ED54D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 718BCE791429219800ED54D6 /* main.m */; };
@@ -18,6 +20,10 @@
 		718BCE951429219800ED54D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE931429219800ED54D6 /* InfoPlist.strings */; };
 		718BCE971429219800ED54D6 /* kinect_sensingTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 718BCE961429219800ED54D6 /* kinect_sensingTests.h */; };
 		718BCE991429219800ED54D6 /* kinect_sensingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 718BCE981429219800ED54D6 /* kinect_sensingTests.m */; };
+		718BCEA41429224B00ED54D6 /* MyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 718BCEA31429224B00ED54D6 /* MyController.mm */; };
+		718BCEA71429227100ED54D6 /* MyView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 718BCEA61429227100ED54D6 /* MyView.mm */; };
+		718BCEAA1429254D00ED54D6 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 718BCEA81429254C00ED54D6 /* Buffer.cpp */; };
+		718BCEAD1429256100ED54D6 /* KinectSensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 718BCEAB1429256100ED54D6 /* KinectSensor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,25 +37,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0650F95214C7710000B13B26 /* libOpenNI.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI.dylib; path = ../kinect_sensing/libOpenNI.dylib; sourceTree = "<group>"; };
 		718BCE691429219800ED54D6 /* kinect_sensing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kinect_sensing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718BCE6D1429219800ED54D6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		718BCE701429219800ED54D6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		718BCE711429219800ED54D6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		718BCE721429219800ED54D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		718BCE751429219800ED54D6 /* kinect_sensing-Info.plist */ = {isa = PBXFileReference; path = "kinect_sensing-Info.plist"; sourceTree = "<group>"; };
+		718BCE751429219800ED54D6 /* kinect_sensing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kinect_sensing-Info.plist"; sourceTree = "<group>"; };
 		718BCE771429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		718BCE791429219800ED54D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		718BCE7B1429219800ED54D6 /* kinect_sensing-Prefix.pch */ = {isa = PBXFileReference; path = "kinect_sensing-Prefix.pch"; sourceTree = "<group>"; };
+		718BCE7B1429219800ED54D6 /* kinect_sensing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kinect_sensing-Prefix.pch"; sourceTree = "<group>"; };
 		718BCE7D1429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		718BCE7F1429219800ED54D6 /* kinect_sensingAppDelegate.h */ = {isa = PBXFileReference; path = kinect_sensingAppDelegate.h; sourceTree = "<group>"; };
+		718BCE7F1429219800ED54D6 /* kinect_sensingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kinect_sensingAppDelegate.h; sourceTree = "<group>"; };
 		718BCE801429219800ED54D6 /* kinect_sensingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kinect_sensingAppDelegate.m; sourceTree = "<group>"; };
 		718BCE831429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		718BCE8A1429219800ED54D6 /* kinect_sensingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kinect_sensingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		718BCE8B1429219800ED54D6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		718BCE921429219800ED54D6 /* kinect_sensingTests-Info.plist */ = {isa = PBXFileReference; path = "kinect_sensingTests-Info.plist"; sourceTree = "<group>"; };
+		718BCE921429219800ED54D6 /* kinect_sensingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kinect_sensingTests-Info.plist"; sourceTree = "<group>"; };
 		718BCE941429219800ED54D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		718BCE961429219800ED54D6 /* kinect_sensingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kinect_sensingTests.h; sourceTree = "<group>"; };
 		718BCE981429219800ED54D6 /* kinect_sensingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kinect_sensingTests.m; sourceTree = "<group>"; };
+		718BCEA21429224B00ED54D6 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyController.h; path = ../MyController.h; sourceTree = "<group>"; };
+		718BCEA31429224B00ED54D6 /* MyController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyController.mm; path = ../MyController.mm; sourceTree = "<group>"; };
+		718BCEA51429227100ED54D6 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		718BCEA61429227100ED54D6 /* MyView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyView.mm; sourceTree = "<group>"; };
+		718BCEA81429254C00ED54D6 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Buffer.cpp; path = kinect_sensing/Buffer.cpp; sourceTree = "<group>"; };
+		718BCEA91429254D00ED54D6 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buffer.h; path = kinect_sensing/Buffer.h; sourceTree = "<group>"; };
+		718BCEAB1429256100ED54D6 /* KinectSensor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KinectSensor.cpp; path = kinect_sensing/KinectSensor.cpp; sourceTree = "<group>"; };
+		718BCEAC1429256100ED54D6 /* KinectSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KinectSensor.h; path = kinect_sensing/KinectSensor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				718BCE6E1429219800ED54D6 /* Cocoa.framework in Frameworks */,
+				0650F95314C7710000B13B26 /* libOpenNI.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,15 +83,28 @@
 			files = (
 				718BCE8C1429219800ED54D6 /* SenTestingKit.framework in Frameworks */,
 				718BCE8D1429219800ED54D6 /* Cocoa.framework in Frameworks */,
+				0650F95414C7710000B13B26 /* libOpenNI.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062DEFE614C76C6200E1A6F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				718BCEAB1429256100ED54D6 /* KinectSensor.cpp */,
+				718BCEAC1429256100ED54D6 /* KinectSensor.h */,
+				718BCEA81429254C00ED54D6 /* Buffer.cpp */,
+				718BCEA91429254D00ED54D6 /* Buffer.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		718BCE5E1429219800ED54D6 = {
 			isa = PBXGroup;
 			children = (
+				062DEFE614C76C6200E1A6F0 /* Classes */,
 				718BCE731429219800ED54D6 /* kinect_sensing */,
 				718BCE901429219800ED54D6 /* kinect_sensingTests */,
 				718BCE6C1429219800ED54D6 /* Frameworks */,
@@ -115,10 +144,14 @@
 		718BCE731429219800ED54D6 /* kinect_sensing */ = {
 			isa = PBXGroup;
 			children = (
+				718BCEA21429224B00ED54D6 /* MyController.h */,
+				718BCEA31429224B00ED54D6 /* MyController.mm */,
 				718BCE7F1429219800ED54D6 /* kinect_sensingAppDelegate.h */,
 				718BCE801429219800ED54D6 /* kinect_sensingAppDelegate.m */,
 				718BCE821429219800ED54D6 /* MainMenu.xib */,
 				718BCE741429219800ED54D6 /* Supporting Files */,
+				718BCEA51429227100ED54D6 /* MyView.h */,
+				718BCEA61429227100ED54D6 /* MyView.mm */,
 			);
 			path = kinect_sensing;
 			sourceTree = "<group>";
@@ -150,6 +183,7 @@
 			children = (
 				718BCE921429219800ED54D6 /* kinect_sensingTests-Info.plist */,
 				718BCE931429219800ED54D6 /* InfoPlist.strings */,
+				0650F95214C7710000B13B26 /* libOpenNI.dylib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,6 +233,7 @@
 		718BCE601429219800ED54D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Arizona State University";
 			};
 			buildConfigurationList = 718BCE631429219800ED54D6 /* Build configuration list for PBXProject "kinect_sensing" */;
@@ -264,6 +299,10 @@
 			files = (
 				718BCE7A1429219800ED54D6 /* main.m in Sources */,
 				718BCE811429219800ED54D6 /* kinect_sensingAppDelegate.m in Sources */,
+				718BCEA41429224B00ED54D6 /* MyController.mm in Sources */,
+				718BCEA71429227100ED54D6 /* MyView.mm in Sources */,
+				718BCEAA1429254D00ED54D6 /* Buffer.cpp in Sources */,
+				718BCEAD1429256100ED54D6 /* KinectSensor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +363,7 @@
 		718BCE9A1429219800ED54D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -341,16 +380,20 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
+				LIBRARY_SEARCH_PATHS = /Users/Tingfang/Documents/TingfangWorkSpace/OpenNI/Lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				OpenNI_DIR = "~/Documents/TingfangWorkSpace/OpenNI/Include/";
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 			};
 			name = Debug;
 		};
 		718BCE9B1429219800ED54D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -361,8 +404,12 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
+				LIBRARY_SEARCH_PATHS = /Users/Tingfang/Documents/TingfangWorkSpace/OpenNI/Lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OpenNI_DIR = "~/Documents/TingfangWorkSpace/OpenNI/Include/";
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 			};
 			name = Release;
 		};
@@ -371,8 +418,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
+				"HEADER_SEARCH_PATHS[arch=*]" = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				INFOPLIST_FILE = "kinect_sensing/kinect_sensing-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"~/Documents/TingfangWorkSpace/OpenNI/Lib/",
+					"\"$(SRCROOT)/kinect_sensing\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -382,8 +436,14 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				INFOPLIST_FILE = "kinect_sensing/kinect_sensing-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"~/Documents/TingfangWorkSpace/OpenNI/Lib/",
+					"\"$(SRCROOT)/kinect_sensing\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -395,9 +455,15 @@
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				INFOPLIST_FILE = "kinect_sensingTests/kinect_sensingTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/kinect_sensing\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -409,9 +475,15 @@
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kinect_sensing/kinect_sensing-Prefix.pch";
+				HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				INFOPLIST_FILE = "kinect_sensingTests/kinect_sensingTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/kinect_sensing\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "~/Documents/TingfangWorkSpace/OpenNI/Include";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -435,6 +507,7 @@
 				718BCE9E1429219800ED54D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		718BCE9F1429219800ED54D6 /* Build configuration list for PBXNativeTarget "kinect_sensingTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +516,7 @@
 				718BCEA11429219800ED54D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
