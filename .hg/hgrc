@@ -1,2 +1,4 @@
 [ui]
-username = Tingfang Du <tingfang@asu.edu>
+username=Tingfang Du  <tingfang@asu.edu>
+[paths]
+default=https://du5l5ljason@github.com/du5l5ljason/HAMRRKinectSensingApp-Mac.git
